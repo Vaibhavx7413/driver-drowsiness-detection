@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driver Drowsiness Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>🚗 Driver Drowsiness Detection</h1>
+  <div class="video-container">
+    <img src="{{ url_for('video') }}" alt="Live Video Stream" id="video-stream">
+  </div>
+
+  <p class="note">Ensure proper lighting and camera position for accurate detection.</p>
+
+  <footer>
+    <p>Developed with ❤️ by <b>Vaibhav</b> | Powered by Flask, OpenCV & dlib</p>
+  </footer>
+</body>
+</html>
